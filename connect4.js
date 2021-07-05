@@ -31,11 +31,12 @@ function makeHtmlBoard() {
 
   const htmlBoard = document.getElementById('board')
 
-  // TODO: add comment for this code
+  // Creates a row at the top of the table with special properties; adds event listener for top row referring to handleClick below; 
   const top = document.createElement("tr");
   top.setAttribute("id", "column-top");
   top.addEventListener("click", handleClick);
 
+  // Creates cells for top row each with a unique ID number corresponding to the column; 
   for (let x = 0; x < WIDTH; x++) {
     const headCell = document.createElement("td");
     headCell.setAttribute("id", x);
@@ -43,7 +44,7 @@ function makeHtmlBoard() {
   }
   htmlBoard.append(top);
 
-  // TODO: add comment for this code
+  // Adds body rows to table corresponding to Height and Width; Sets each cell to a specific ID (height#-width#)
   for (let y = 0; y < HEIGHT; y++) {
     const row = document.createElement("tr");
     for (let x = 0; x < WIDTH; x++) {
