@@ -127,7 +127,7 @@ function gameOverMsg() {
   const gameOverMsg = document.createElement('span');
   playerTurn.innerHTML = '';
   if (!checkForTie()) {
-    gameOverMsg.innerText = `Player ${currPlayer} won!`;
+    gameOverMsg.innerText = `Player ${currPlayer} wins!`;
     if (currPlayer === 1) {
       gameOverMsg.style.color = 'red';
     } else gameOverMsg.style.color = 'yellow';
@@ -166,7 +166,7 @@ function handleClick(evt) {
     else {
       winningPiece.classList.add('winningPieceP2');
     }
-    return endGame(`Player ${currPlayer} won!`);
+    return endGame(`Player ${currPlayer} wins!`);
   }
 
 
