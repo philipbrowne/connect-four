@@ -95,13 +95,13 @@ const dropDown = (position, piece) => {
   piece.style.top = `${-yPos + 150}px`;
   // This was the closest I could find to the top row
   piece.style.left = '5px';
-  let interval = setInterval(() => dropDownMvt(piece, interval), 20)
+  let interval = setInterval(() => dropDownMvt(piece, interval), 12)
 }
 // Downward Movement of Piece
 const dropDownMvt = (piece, interval) => {
   let yPos = piece.offsetTop
   if (yPos < 10) {
-    piece.style.top = `${yPos + 15}px`
+    piece.style.top = `${yPos + 30}px`
   } else {
     piece.style.position = 'relative';
     piece.style.top = 'unset';
