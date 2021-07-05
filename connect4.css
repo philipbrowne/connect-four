@@ -1,37 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  background-color: #212529;
+  color: #f1faee;
+	font-family: 'Roboto', sans-serif;}
+/* 
+Game Board */
+#board{
+  margin: auto;
+  width: 95vw;
+  height: 95vw;
+  max-width: 900px;
+  max-height: 900px;
+  border-radius: 2%;
+  padding: 2rem;
+  background-image: url('https://images.unsplash.com/photo-1522441815192-d9f04eb0615c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=564&q=80');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #457b9d;
+}
+
+#heading{
+  text-align: center;
+}
+
+#playerTurn{
+  font-size: 1.2rem;
+  text-align: center;
+margin-top: 1rem;
+}
+
 /* game board table */
 
+
 #board td {
-  width: 50px;
-  height: 50px;
-  border: solid 1px #666;
+  border: solid 1px white;
+position: relative;
+border-radius: 50px;
 }
 
 /* pieces are div within game table cells: draw as colored circles */
 
 .piece {
-  /* TODO: make into circles */
-  margin: 5px;
-  width: 80%;
-  height: 80%;
+  width: 90%;
+  height: 90%;
   border-radius: 50%;
-}
+  position:relative;
 
-/* TODO: make pieces red/blue,  depending on player 1/2 piece */
+  margin: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 .p1 {
-  background-color: red;
+background-image: url('https://images.unsplash.com/photo-1577451581742-98bc6c0ea83e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80');
+  background-color:#e63946;
+}
+.p2 {
+background-image: url(https://images.unsplash.com/photo-1516641051054-9df6a1aad654?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80);
+  background-color: yellow;
 }
 
-.p2 {
-  background-color: blue;
+.player1Msg{
+  color: #e63946;
+}
+.player2Msg{
+  color:yellow;
+}
+
+.player1Token{
+  background-image: url('https://images.unsplash.com/photo-1577451581742-98bc6c0ea83e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #e63946;
+  border: 1px solid black;
+  text-align: center;
+  width: 3rem;
+  height: 3rem;
+  margin: auto;
+  border-radius: 50%;
+  margin-top: 0.5rem;
+}
+
+.player2Token{
+  background-image: url(https://images.unsplash.com/photo-1516641051054-9df6a1aad654?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: yellow;
+  border: 1px solid black;
+  text-align: center;
+  width: 3rem;
+  height: 3rem;
+  margin: auto;
+  border-radius: 50%;
+  margin-top: 0.5rem;
+}
+
+.winningPieceP1{
+  background-image: url('./red-emoji.jpg')
+  /* https://image.emojipng.com/734/12876734.jpg */
+}
+
+
+.winningPieceP2{
+  background-image: url('./smiling-emoji.png')
+  /* https://cdn.shopify.com/s/files/1/1061/1924/products/Smiling_Face_Emoji_grande.png?v=1571606036 */
+}
+.gameovermsg{
+  color:#a8dadc;
+  font-weight: bold;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+#playAgain{
+  text-transform: none;
+  font-weight: normal;
+  font-size: 0.8rem;
+  margin-top: 1.2rem;
+  color: lightgreen;
+  cursor: pointer;
 }
 
 /* column-top is table row of clickable areas for each column */
 
 #column-top td {
-  border: dashed 1px lightgray;
+  border-radius: 70% 70% 25% 25%;
+  border: dashed 1px #212529;
 }
 
 #column-top td:hover {
-  background-color: gold;
+  background-color: lightgreen;
+  cursor: pointer;
 }
+
+#gameovertop td{
+    border: dashed 1px lightgray;
+}
+
