@@ -1,27 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-:root{
-  --green-bg: url('https://images.unsplash.com/photo-1601370690183-1c7796ecec61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-  --blue-bg: url('https://images.unsplash.com/photo-1531169509526-f8f1fdaa4a67?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');
-  --red-bg: url('https://images.unsplash.com/photo-1577451581742-98bc6c0ea83e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80');
-  --orange-bg: url('https://images.unsplash.com/photo-1605716795075-d035e4f624d6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-  --purple-bg: url('https://images.unsplash.com/photo-1606978802549-3276d4199859?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-  --yellow-bg: url('https://images.unsplash.com/photo-1516641051054-9df6a1aad654?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80');
-  --pink-bg: url('https://images.unsplash.com/photo-1612293025896-7200cc87e540?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');
+:root {
+  --green-bg: url("https://images.unsplash.com/photo-1601370690183-1c7796ecec61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+  --blue-bg: url("https://images.unsplash.com/photo-1531169509526-f8f1fdaa4a67?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+  --red-bg: url("https://images.unsplash.com/photo-1577451581742-98bc6c0ea83e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80");
+  --orange-bg: url("https://images.unsplash.com/photo-1605716795075-d035e4f624d6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+  --purple-bg: url("https://images.unsplash.com/photo-1606978802549-3276d4199859?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+  --yellow-bg: url("https://images.unsplash.com/photo-1516641051054-9df6a1aad654?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80");
+  --pink-bg: url("https://images.unsplash.com/photo-1612293025896-7200cc87e540?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
 }
 
 body {
-  background-image: url('https://images.unsplash.com/photo-1603715749723-240c88df18b1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80');
+  background-image: url("https://images.unsplash.com/photo-1603715749723-240c88df18b1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #212529;
   color: #f1faee;
-	font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /* 
 Game Board */
-#board{
+#board {
   margin: auto;
   width: 95vw;
   height: 95vw;
@@ -29,26 +29,26 @@ Game Board */
   max-height: 900px;
   border-radius: 2%;
   padding: 2rem;
-  background-image: url('https://images.unsplash.com/photo-1522441815192-d9f04eb0615c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=564&q=80');
+  background-image: url("https://images.unsplash.com/photo-1522441815192-d9f04eb0615c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=564&q=80");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #457b9d;
 }
 
-#startGame{
-height: 50vh;
-margin: 0;
-text-align: center;
+#startGame {
+  height: 50vh;
+  margin: 0;
+  text-align: center;
+  animation: flash-text 3s linear infinite;
 }
 
-#startContainer{
-transform: translateY(30%);
-font-size: 2rem;
-animation: flash-text 3s linear infinite;
+#startContainer {
+  transform: translateY(10%);
+  font-size: 2rem;
 }
 
-.dropdown{
+.dropdown {
   font-family: inherit;
   font-size: 1.5rem;
   background-color: black;
@@ -59,38 +59,35 @@ animation: flash-text 3s linear infinite;
   margin: 1rem;
 }
 
-#p2color{
+#p2color {
   margin-top: 1rem;
 }
 
-
-#heading{
+#heading {
   text-align: center;
   font-size: 6rem;
   font-weight: bold;
-animation: flash-text 3s linear infinite;
+  animation: flash-text 3s linear infinite;
 }
 
-#playerTurn{
+#playerTurn {
   width: 300px;
   height: 120px;
   font-size: 2rem;
   text-align: center;
   margin: 0 auto;
-margin-top: 1rem;
-background-color: black;
-border-radius: 25%;
-padding: 1rem;
+  margin-top: 1rem;
+  background-color: black;
+  border-radius: 25%;
+  padding: 1rem;
 }
-
 
 /* game board table */
 
-
 #board td {
   border: solid 1px white;
-position: relative;
-border-radius: 50px;
+  position: relative;
+  border-radius: 50px;
 }
 
 /* pieces are div within game table cells: draw as colored circles */
@@ -99,7 +96,7 @@ border-radius: 50px;
   width: 90%;
   height: 90%;
   border-radius: 50%;
-  position:relative;
+  position: relative;
 
   margin: auto;
   background-position: center;
@@ -107,7 +104,7 @@ border-radius: 50px;
   background-repeat: no-repeat;
 }
 
-.playerToken{
+.playerToken {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -120,20 +117,19 @@ border-radius: 50px;
   margin-top: 0.5rem;
 }
 
-.winningPiece{
-animation: flash linear 1s infinite;
+.winningPiece {
+  animation: flash linear 1s infinite;
 }
 
-
-.gameovermsg{
-  color:#a8dadc;
+.gameovermsg {
+  color: #a8dadc;
   font-weight: bold;
   font-size: 4em;
   text-transform: uppercase;
   animation: flash linear 2s infinite;
 }
 
-#playAgain{
+#playAgain {
   text-transform: none;
   font-weight: normal;
   font-size: 2rem;
@@ -154,8 +150,8 @@ animation: flash linear 1s infinite;
   cursor: pointer;
 }
 
-#gameovertop td{
-    border: dashed 1px lightgray;
+#gameovertop td {
+  border: dashed 1px lightgray;
 }
 
 #startBtn {
@@ -166,32 +162,31 @@ animation: flash linear 1s infinite;
 
 #startBtn {
   display: flex;
-	background-color: green;
-	color: #fff;
-	border: 0;
-	border-radius: 6px;
-	cursor: pointer;
-	font-family: inherit;
-	padding: 10px 40px;
-	font-size: 30px;
+  background-color: green;
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 10px 40px;
+  font-size: 30px;
   text-align: center;
   margin: auto;
   margin-top: 3rem;
 }
 
 #startBtn:active {
-	transform: scale(.98);
+  transform: scale(0.98);
 }
 
 #startBtn:focus {
-	outline: 0;
+  outline: 0;
 }
 
 #startBtn:disabled {
-	background-color: var(--line-border-empty);
-	cursor: not-allowed;
+  background-color: var(--line-border-empty);
+  cursor: not-allowed;
 }
-
 
 .green {
   background-image: var(--green-bg);
@@ -217,7 +212,7 @@ animation: flash linear 1s infinite;
   background-repeat: no-repeat;
 }
 
-.orange{
+.orange {
   background-image: var(--orange-bg);
   background-color: orange;
   background-position: center;
@@ -225,7 +220,7 @@ animation: flash linear 1s infinite;
   background-repeat: no-repeat;
 }
 
-.purple{
+.purple {
   background-image: var(--purple-bg);
   background-color: purple;
   background-position: center;
@@ -233,7 +228,7 @@ animation: flash linear 1s infinite;
   background-repeat: no-repeat;
 }
 
-.yellow{
+.yellow {
   background-image: var(--yellow-bg);
   background-color: yellow;
   background-position: center;
@@ -241,7 +236,7 @@ animation: flash linear 1s infinite;
   background-repeat: no-repeat;
 }
 
-.pink{
+.pink {
   background-image: var(--pink-bg);
   background-color: pink;
   background-position: center;
@@ -249,83 +244,94 @@ animation: flash linear 1s infinite;
   background-repeat: no-repeat;
 }
 
-.greenselector{
+.greenselector {
   background-color: black;
   color: green;
 }
-.blueselector{
+.blueselector {
   background-color: black;
   color: blue;
 }
-.redselector{
+.redselector {
   background-color: black;
   color: red;
 }
-.orangeselector{
+.orangeselector {
   background-color: black;
   color: orange;
 }
-.purpleselector{
+.purpleselector {
   background-color: black;
   color: purple;
 }
-.yellowselector{
+.yellowselector {
   background-color: black;
   color: yellow;
 }
-.pinkselector{
+.pinkselector {
   background-color: black;
   color: pink;
 }
 
 @keyframes flash {
-	0% { opacity: 1; } 
-	50% { opacity: .7; } 
-	100% { opacity: 1; }
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-@keyframes flash-text{
-  0% { color: white; } 
-	50% { color: yellow; } 
-	100% { color: white; }
+@keyframes flash-text {
+  0% {
+    color: white;
+  }
+  50% {
+    color: yellow;
+  }
+  100% {
+    color: white;
+  }
 }
-
 
 @media (max-width: 400px) {
-  #heading{
-    font-size: 4rem; 
+  #heading {
+    font-size: 4rem;
   }
-  #startContainer{
+  #startContainer {
     font-size: 1.5rem;
   }
-  #playerTurn{
+  #playerTurn {
     width: 180px;
     height: 120px;
     font-size: 1rem;
-}
-.playerToken{
-  width: 3.5rem;
-  height: 3.5rem;
-}
-.gameovermsg{
-  font-size: 3rem;
-}
-#playAgain{
-  font-size: 1.5rem;
-}
+  }
+  .playerToken {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .gameovermsg {
+    font-size: 3rem;
+  }
+  #playAgain {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 250px) {
-  #heading{
+  #heading {
     font-size: 2rem;
   }
-  #playerTurn{
+  #playerTurn {
     width: 100px;
     height: 110px;
     font-size: 1rem;
-}
-.playerToken{
-  width: 2rem;
-  height: 2rem;
-}
+  }
+  .playerToken {
+    width: 2rem;
+    height: 2rem;
+  }
 }
