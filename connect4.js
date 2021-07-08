@@ -9,6 +9,7 @@ const game = document.getElementById('game');
 const startBtn = document.getElementById('startBtn');
 const startGame = document.getElementById('startGame');
  
+// Refactored Game Class
 class Game {
   constructor(p1, p2, HEIGHT = 6, WIDTH = 7) {
     this.players = [p1, p2];
