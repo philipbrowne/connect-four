@@ -33,11 +33,9 @@ class Game {
   };
   /** makeHtmlBoard: make HTML table and row of column tops. */
   makeHtmlBoard() {
-    const table = document.createElement('table');
-    table.setAttribute('id', 'board');
-    game.append(table);
-    
-    const board = document.getElementById('board');
+    const board = document.createElement('table');
+    board.setAttribute('id', 'board');
+    game.append(board);
     board.innerHTML = '';
     const playerTurn = document.createElement('div');
     playerTurn.removeAttribute('class');
