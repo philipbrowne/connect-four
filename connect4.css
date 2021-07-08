@@ -1,14 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+:root{
+  --green-bg: url('https://images.unsplash.com/photo-1601370690183-1c7796ecec61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+  --blue-bg: url('https://images.unsplash.com/photo-1531169509526-f8f1fdaa4a67?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');
+  --red-bg: url('https://images.unsplash.com/photo-1577451581742-98bc6c0ea83e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80');
+  --orange-bg: url('https://images.unsplash.com/photo-1605716795075-d035e4f624d6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+  --purple-bg: url('https://images.unsplash.com/photo-1606978802549-3276d4199859?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+  --yellow-bg: url('https://images.unsplash.com/photo-1516641051054-9df6a1aad654?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80');
+  --pink-bg: url('https://images.unsplash.com/photo-1612293025896-7200cc87e540?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');
+}
+
 body {
-  background-image: url('https://images.unsplash.com/photo-1524334228333-0f6db392f8a1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+  background-image: url('https://images.unsplash.com/photo-1603715749723-240c88df18b1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #212529;
   color: #f1faee;
 	font-family: 'Roboto', sans-serif;
-
 }
 /* 
 Game Board */
@@ -27,15 +36,53 @@ Game Board */
   background-color: #457b9d;
 }
 
+#startGame{
+height: 50vh;
+margin: 0;
+text-align: center;
+}
+
+#startContainer{
+transform: translateY(30%);
+font-size: 2rem;
+animation: flash-text 3s linear infinite;
+}
+
+.dropdown{
+  font-family: inherit;
+  font-size: 1.5rem;
+  background-color: black;
+  color: white;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  margin: 1rem;
+}
+
+#p2color{
+  margin-top: 1rem;
+}
+
+
 #heading{
   text-align: center;
+  font-size: 6rem;
+  font-weight: bold;
+animation: flash-text 3s linear infinite;
 }
 
 #playerTurn{
+  width: 300px;
+  height: 120px;
   font-size: 2rem;
   text-align: center;
+  margin: 0 auto;
 margin-top: 1rem;
+background-color: black;
+border-radius: 25%;
+padding: 1rem;
 }
+
 
 /* game board table */
 
@@ -60,75 +107,38 @@ border-radius: 50px;
   background-repeat: no-repeat;
 }
 
-.p1 {
-background-image: url('https://images.unsplash.com/photo-1577451581742-98bc6c0ea83e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80');
-  background-color:#e63946;
-}
-.p2 {
-background-image: url(https://images.unsplash.com/photo-1516641051054-9df6a1aad654?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80);
-  background-color: yellow;
-}
-
-.player1Msg{
-  color: #e63946;
-}
-.player2Msg{
-  color:yellow;
-}
-
-.player1Token{
-  background-image: url('https://images.unsplash.com/photo-1577451581742-98bc6c0ea83e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80');
+.playerToken{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #e63946;
   border: 1px solid black;
   text-align: center;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
   margin: auto;
   border-radius: 50%;
   margin-top: 0.5rem;
 }
 
-.player2Token{
-  background-image: url(https://images.unsplash.com/photo-1516641051054-9df6a1aad654?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: yellow;
-  border: 1px solid black;
-  text-align: center;
-  width: 3rem;
-  height: 3rem;
-  margin: auto;
-  border-radius: 50%;
-  margin-top: 0.5rem;
-}
-
-.winningPieceP1{
-  background-image: url('./red-emoji.jpg')
-  /* https://image.emojipng.com/734/12876734.jpg */
+.winningPiece{
+animation: flash linear 1s infinite;
 }
 
 
-.winningPieceP2{
-  background-image: url('./smiling-emoji.png')
-  /* https://cdn.shopify.com/s/files/1/1061/1924/products/Smiling_Face_Emoji_grande.png?v=1571606036 */
-}
 .gameovermsg{
   color:#a8dadc;
   font-weight: bold;
-  font-size: 3em;
+  font-size: 4em;
   text-transform: uppercase;
+  animation: flash linear 2s infinite;
 }
 
 #playAgain{
   text-transform: none;
   font-weight: normal;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-top: 1.2rem;
-  color: lightgreen;
+  color: #a8dadc;
   cursor: pointer;
 }
 
@@ -148,3 +158,176 @@ background-image: url(https://images.unsplash.com/photo-1516641051054-9df6a1aad6
     border: dashed 1px lightgray;
 }
 
+#startBtn {
+  display: flex;
+  margin: auto;
+  margin-top: 1em;
+}
+
+
+
+#startBtn {
+  display: flex;
+	background-color: green;
+	color: #fff;
+	border: 0;
+	border-radius: 6px;
+	cursor: pointer;
+	font-family: inherit;
+	padding: 10px 40px;
+	font-size: 30px;
+  text-align: center;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+#startBtn:active {
+	transform: scale(.98);
+}
+
+#startBtn:focus {
+	outline: 0;
+}
+
+#startBtn:disabled {
+	background-color: var(--line-border-empty);
+	cursor: not-allowed;
+}
+
+
+.green {
+  background-image: var(--green-bg);
+  background-color: green;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.blue {
+  background-image: var(--blue-bg);
+  background-color: blue;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.red {
+  background-image: var(--red-bg);
+  background-color: red;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.orange{
+  background-image: var(--orange-bg);
+  background-color: orange;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.purple{
+  background-image: var(--purple-bg);
+  background-color: purple;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.yellow{
+  background-image: var(--yellow-bg);
+  background-color: yellow;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pink{
+  background-image: var(--pink-bg);
+  background-color: pink;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.greenselector{
+  background-color: black;
+  color: green;
+}
+.blueselector{
+  background-color: black;
+  color: blue;
+}
+.redselector{
+  background-color: black;
+  color: red;
+}
+.orangeselector{
+  background-color: black;
+  color: orange;
+}
+.purpleselector{
+  background-color: black;
+  color: purple;
+}
+.yellowselector{
+  background-color: black;
+  color: yellow;
+}
+.pinkselector{
+  background-color: black;
+  color: pink;
+}
+
+@keyframes flash {
+	0% { opacity: 1; } 
+	50% { opacity: .7; } 
+	100% { opacity: 1; }
+}
+
+@keyframes flash-text{
+  0% { color: white; } 
+	50% { color: yellow; } 
+	100% { color: white; }
+}
+
+
+@media (max-width: 400px) {
+  #heading{
+    font-size: 4rem; 
+  }
+  #startContainer{
+    font-size: 1.5rem;
+  }
+  #playerTurn{
+    width: 180px;
+    height: 120px;
+    font-size: 1rem;
+}
+.playerToken{
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.gameovermsg{
+  font-size: 3rem;
+}
+#playAgain{
+  font-size: 1.5rem;
+}
+}
+
+@media (max-width: 250px) {
+  #heading{
+    font-size: 2rem;
+  }
+  #playerTurn{
+    width: 100px;
+    height: 110px;
+    font-size: 1rem;
+}
+.playerToken{
+  width: 2rem;
+  height: 2rem;
+}
+}
